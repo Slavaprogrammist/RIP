@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block title %}Машина №{{ data.car.id }}{% endblock %}
+
+{% block content %}
+    <div>Название: {{ data.car.name }}</div>
+        <div>Описание: {{ data.car.description }}</div>
+{% endblock %}

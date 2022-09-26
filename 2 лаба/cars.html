@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Список автомобилей{% endblock %}
+
+{% block content %}
+<ul>
+    {% for car in data.cars %}
+       {% include 'qw.html' with elem=car %}
+    {% empty %}
+        <li>Список пуст</li>
+    {% endfor %}
+</ul>
+{% endblock %}

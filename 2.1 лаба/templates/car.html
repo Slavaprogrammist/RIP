@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ data.cars.car }}{% endblock %}
+
+{% block content %}
+    <div>Название: {{ data.car.car }}</div>
+    <div>Описание: {{ data.car.dicription }}</div>
+    <div>Цена за час аренды: {{ data.car.price }} рублей</div>
+{% endblock %}
+
+
